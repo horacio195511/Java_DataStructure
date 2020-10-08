@@ -1,4 +1,4 @@
-package structure.structure;
+package structure;
 
 public interface TreeStructure extends Structure {
     int preTravel();    // DLR
