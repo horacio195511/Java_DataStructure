@@ -10,7 +10,7 @@ public class Linked_list implements Structure{
     // constructor
     public Linked_list(int headData){
         // create a head node
-        head=new Node(headData, null);
+        head=new Node(headData);
     }
     // there should be some condition about where to insert
     public int add(Node newNode){
