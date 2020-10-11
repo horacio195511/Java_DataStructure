@@ -1,8 +1,10 @@
 /**
  * project directory
     structure
-        |__node
-        |__structure
+        |__Abstract_structure
+            |__Abstract_structure
+            |__Tree_structure
+        |__Structure
             |__tree
                 |__binary tree
                 |__binary search tree
@@ -10,6 +12,8 @@
             |__linked list
             |__stack
             |__quere
+    node
+        |__Node
 */
 import structure.Linked_list;
 import node.Node;

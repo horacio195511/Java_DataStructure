@@ -1,6 +1,6 @@
 package structure;
 
-import structure.Structure;
+import structure.Abstract_Structure;
 import node.Node;
 import java.util.Objects;
 
