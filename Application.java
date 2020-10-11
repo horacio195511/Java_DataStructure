@@ -12,7 +12,7 @@
             |__quere
 */
 import structure.Linked_list;
-import structure.linked_list;
+import node.Node;
 
 public class Application {
     public static void main(String[] args) {

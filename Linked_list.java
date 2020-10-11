@@ -1,11 +1,11 @@
-import structure.structure.Structure;
-
 package structure;
+
+import structure.Structure;
 import node.Node;
 import java.util.Objects;
 
 // this implementation is singly linked list, which means that only the next pointer is used
-public class Linked_list implements Structure{
+public class Linked_list implements Abstract_Structure{
     Node head;
     // constructor
     public Linked_list(int headData){
