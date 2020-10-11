@@ -3,10 +3,11 @@
  */
 
 package node;
+
 public class Node{
-    Node pre;
-    Object data;
-    Node next;
+    public Node pre;
+    public Object data;
+    public Node next;
 
     public Node(Object data){
         // for doubly linked list

@@ -1,6 +1,6 @@
 package structure;
 
-import structure.Abstract_Structure;
+import structure.Abstract_Structure.Abstract_Structure;
 import node.Node;
 import java.util.Objects;
 
@@ -21,6 +21,7 @@ public class Linked_list implements Abstract_Structure{
             current=current.next;
         }
         current.next=newNode;
+        return 1;
     }
     public int delete(Object target){
         // search for the wanted Node
@@ -29,6 +30,9 @@ public class Linked_list implements Abstract_Structure{
         if(targetNode!=null){
             Node pre=targetNode.pre;
             pre.next=targetNode.next;
+            return 1;
+        }else{
+            return 0;
         }
     }
     public Node search(Object target){
@@ -38,11 +42,12 @@ public class Linked_list implements Abstract_Structure{
         while(current.next!=null){
             pre=current;
             current=current.next;
-            if(Objects.equals(current.data, target) == true){
+            if(Objects.equals(current.data, target)){
                 current.pre=pre;
                 return current;
             }
         }
+        return null;
     }
 
     public void travel(){
