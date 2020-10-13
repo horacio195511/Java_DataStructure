@@ -16,6 +16,7 @@
         |__Node
 */
 import structure.Linked_list;
+import structure.Stack;
 import node.Node;
 
 public class Application {
@@ -37,5 +38,7 @@ public class Application {
         list1.delete(15);
         // travel around
         list1.travel();
+
+        // stack test
     }
 }

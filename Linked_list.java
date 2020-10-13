@@ -10,13 +10,14 @@ public class Linked_list implements Abstract_Structure{
     // constructor
     public Linked_list(int headData){
         // create a head node
+        // headData as identifier
         head=new Node(headData);
     }
     // there should be some condition about where to insert
     public int add(Node newNode){
         //return 1 if success, add the input element to required place
         Node current=this.head;
-        while(current != null){
+        while(current.next != null){
             // roll until to the last node
             current=current.next;
         }
@@ -53,9 +54,9 @@ public class Linked_list implements Abstract_Structure{
     public void travel(){
         // linear travel
         Node current=this.head;
-        while(current != null){
+        while(current.next != null){
             current=current.next;
-            System.out.print(current.data.toString());
+            System.out.println(current.data.toString());
         }
     }
 }
